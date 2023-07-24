@@ -1,0 +1,9 @@
+<form [formGroup]="form">
+  <label for="">Name</label>
+  <input type="text" formControlName="name" />
+  <label for="">Email</label>
+  <input type="email" formControlName="email" />
+  <div class="row">
+    <button (click)="onSave()" [disabled]="!form.valid">Save</button>
+  </div>
+</form>
